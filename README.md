@@ -1,16 +1,16 @@
-# Remove-OldFiles
-���ָ���ļ����й��ڵ��ļ���
+# Remove-ExpiredFiles
+清除指定文件夹中过期的文件。
 
-## ����˵��
+## 参数说明
 
-- `$targetDir` Ϊ��������Ŀ¼��
-- `$pattern` Ϊ���������ļ�����֧��ͨ�����
-- `$expiryDays` Ϊ����ʱ�䣬��λ���졣
+- `$targetDir` 为待清理的目录。
+- `$pattern` 为待清理的文件名，支持通配符。
+- `$expiryDays` 为过期时间，单位是天。
 
-## �ƻ�����
+## 计划任务
 
-��Ҫ����ִ�нű����봴���ƻ����񡣼ƻ�����ġ����������������£�
+若要定期执行脚本，请创建计划任务。计划任务的“启动程序”设置如下：
 
-- �������ű����� powershell
-- �����Ӳ������� -NoProfile -ExecutionPolicy Unrestricted .\Remove-OldFiles.ps1
-- ����ʼ�ڡ���ű����ڵ�Ŀ¼
+- “程序或脚本”填 powershell
+- “添加参数”填 -NoProfile -ExecutionPolicy Unrestricted .\Remove-ExpiredFiles.ps1
+- “起始于”填脚本所在的目录
