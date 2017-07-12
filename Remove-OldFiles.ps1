@@ -1,6 +1,6 @@
 ﻿$targetDir = 'targetDir'
 $pattern = '*.txt *.log'
-$expiryDays = 0
+$expiryDays = 30
 
 Get-ChildItem -Recurse -File -Include $pattern -LiteralPath $targetDir | `
     Where-Object {
