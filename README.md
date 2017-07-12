@@ -11,6 +11,6 @@
 
 若要定期执行脚本，请创建计划任务。计划任务的“启动程序”设置如下：
 
-- “程序或脚本”填 powersheell
+- “程序或脚本”填 powershell
 - “添加参数”填 -NoProfile -ExecutionPolicy Unrestricted .\Remove-OldFiles.ps1
 - “起始于”填脚本所在的目录
